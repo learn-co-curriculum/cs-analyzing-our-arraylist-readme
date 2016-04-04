@@ -40,7 +40,7 @@ Now that we've classified `get`, we can classify `set`, which uses it.  Here is 
 
 One slightly clever part of this solution is that it does not check the bounds of the array explicitly; it takes advantage of `get`, which raises an exception if the index is invalid.
 
-Everything in `set`, including the invocation of `get`, is constant time, so `get` is also constant time.
+Everything in `set`, including the invocation of `get`, is constant time, so `set` is also constant time.
 
 Next we'll look at some linear methods.  For example, here's my implementation of `indexOf`:
 
@@ -186,3 +186,5 @@ Sometimes when we talk about "problem size" we have to be careful about which si
 ## Resources
 
 [Amortized analysis](https://en.wikipedia.org/wiki/Amortized_analysis): Wikipedia page.
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/cs-analyzing-our-arraylist-readme'>Analyzing Our Array List</a> on Learn.co and start learning to code for free.</p>
